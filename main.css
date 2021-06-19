@@ -1,0 +1,300 @@
+@font-face {
+  font-family:"SF Pro Text";
+  src: url("SF Pro Text.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica-Neue", sans-serif;
+}
+
+section {
+  width: 100vw;
+  height: auto;
+  padding: 5% 8%;
+  border-bottom: 1px solid #dedede;
+}
+
+input {
+  padding: 1%;
+  width: 45%;
+  margin-top: 1.5%;
+  box-shadow: none;
+  border: 1px solid #dedede;
+}
+
+input::placeholder {
+  font-size: 19px;
+  font-weight: 50;
+}
+
+h1 {
+  color: #333333;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.hero-img {
+  height: 80vh;
+  background-image: url("images/apple-support-hero-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content {
+  text-align: center;
+  height: 13vh;
+  padding-top: 16vh;
+}
+
+/* FLEXBOX */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container > div i {
+  font-weight: 600;
+}
+
+.flex-container > div h2,
+.flex-container > div a,
+.flex-container > div p {
+  text-align: left;
+  margin-top: 3%;
+  color: #333333;
+}
+
+.flex-container > div a, .footer a {
+  text-decoration: none;
+  color: #4898d8;
+  line-height: 26.001px;
+  letter-spacing: -0.357px;
+  font-weight: 400;
+  display: block;
+  margin-top: 0.5%;
+}
+
+.flex-container > div h2 {
+  font-size: 32px;
+  letter-spacing: 0.352px;
+  font-weight: 500;
+}
+
+.flex-container > div p {
+  font-size: 17px;
+  letter-spacing: -0.357px;
+  line-height: 26.001px;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 400;
+}
+
+.flex-container > div a:hover, .footer a:hover {
+  text-decoration: underline;
+}
+
+.trade-in, .apple-care, .counterfeit, .gift-cards, .apple-services {
+  padding: 3% 20%;
+}
+
+/* nav-menu flexbox */
+.nav-menu .flex-container {
+  padding: 0.25% 13%;
+  letter-spacing: -0.14px;
+  background-color: rgba(16,8,6, 0.85);
+}
+
+.nav-menu .flex-container > div {
+  width: 10%;
+  font-size: 14px;
+  color: #6b6a6a;
+  background-color: rgba(16,8,6, 0);
+}
+
+.nav-menu .flex-container > div i {
+  font-size: 18px;
+}
+
+.nav-menu .flex-container > div:hover {
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* products flex-box */
+.products {
+  padding: 5% 15%;
+}
+
+.products .flex-container > div {
+  line-height: 26.001px;
+  font-size: 17px;
+  letter-spacing: -0.357px;
+  width: 14.29%;
+}
+
+.products .flex-container > div img {
+  margin-top: -25%;
+  margin-bottom: 10%;
+  width: 55%;
+}
+
+.products .flex-container > div:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* quick-links */
+.quick-links {
+  padding: 2% 16%;
+}
+
+.quick-links .flex-container > div {
+  width: 33.33%;
+  border-right: 1px solid #dedede;
+}
+
+.quick-links .flex-container > div:last-child {
+  border-right: none;
+}
+
+.quick-links .flex-container > div img {
+  margin-bottom: 7%;
+  width: 15%;
+}
+
+.quick-links .flex-container > div a {
+  text-align: center;
+}
+
+/* family-promos */
+.family-promos {
+  padding: 4% 14%;
+}
+
+.family-promos .flex-container > div {
+  width: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.family-promos .flex-container > div img {
+  width: 50%;
+}
+
+/* virtual sessions */
+.virtual-sessions {
+  padding: 2% 22%;
+}
+
+.virtual-sessions .flex-container > div {
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.virtual-sessions .flex-container > div img {
+  width: 100%;
+}
+
+.virtual-sessions .flex-container > div h2 {
+  font-size: 35px;
+}
+
+.virtual-sessions .flex-container > div p {
+  font-size: 20px;
+}
+
+/* get support hero image */
+.get-support-hero {
+  background-image: url("images/get-support.jpeg");
+  height: 50vh;
+}
+
+.get-support-hero .flex-container h2,
+.get-support-hero .flex-container p {
+  color: white;
+}
+
+.get-support-hero .hero-content {
+  padding-top: 4vh;
+  width: 37vw;
+  padding-left: 9vw;
+}
+
+.get-support-hero .flex-container h2 {
+  font-size: 42px;
+}
+
+.get-support-hero .flex-container a {
+  margin-top: 3%;
+}
+
+/* trade-in */
+.trade-in .flex-container > div img {
+  width: 100%;
+}
+
+/* apple care */
+.apple-care .flex-container > div img {
+  width: 100%;
+}
+
+/* counterfeit */
+.counterfeit .flex-container > div {
+  width: 100%;
+}
+
+.counterfeit .flex-container > div h2,
+.counterfeit .flex-container > div p {
+  text-align: center;
+}
+
+.counterfeit .flex-container > div a {
+  display: inline;
+}
+
+/* gift cards */
+.gift-cards .flex-container > div {
+  margin: 0;
+  text-align: left;
+  width: 40%;
+}
+
+.gift-cards .flex-container > div:last-child {
+  width: 60%;
+}
+
+.gift-cards .flex-container > div img {
+  width: 75%;
+}
+
+/* apple services */
+.apple-services .flex-container > div {
+  text-align: left;
+}
+
+.apple-services .flex-container > div h2 {
+  margin-bottom: 4%;
+}
+
+/* footer */
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer a {
+  text-align: center;
+  font-size: 22px;
+}
