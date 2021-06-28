@@ -56,7 +56,7 @@ h1 {
 /* FLEXBOX */
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .flex-container > div {
@@ -83,7 +83,7 @@ h1 {
   letter-spacing: -0.357px;
   font-weight: 400;
   display: block;
-  margin-top: 0.5%;
+  margin-top: 0;
 }
 
 .flex-container > div h2 {
@@ -110,13 +110,13 @@ h1 {
 
 /* nav-menu flexbox */
 .nav-menu .flex-container {
-  padding: 0.25% 13%;
+  padding: 0.25% 2%;
   letter-spacing: -0.14px;
   background-color: rgba(16,8,6, 0.85);
 }
 
 .nav-menu .flex-container > div {
-  width: 10%;
+  width: 6.5%;
   font-size: 14px;
   color: #6b6a6a;
   background-color: rgba(16,8,6, 0);
@@ -133,15 +133,12 @@ h1 {
 }
 
 /* products flex-box */
-.products {
-  padding: 5% 15%;
-}
-
 .products .flex-container > div {
   line-height: 26.001px;
   font-size: 17px;
   letter-spacing: -0.357px;
-  width: 14.29%;
+  width: 20%;
+  margin: 8% 15%;
 }
 
 .products .flex-container > div img {
@@ -156,17 +153,14 @@ h1 {
 }
 
 /* quick-links */
-.quick-links {
-  padding: 2% 16%;
-}
-
 .quick-links .flex-container > div {
-  width: 33.33%;
-  border-right: 1px solid #dedede;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+  padding: 3% 0;
 }
 
 .quick-links .flex-container > div:last-child {
-  border-right: none;
+  border-bottom: none;
 }
 
 .quick-links .flex-container > div img {
@@ -184,7 +178,7 @@ h1 {
 }
 
 .family-promos .flex-container > div {
-  width: 50%;
+  width: 100%;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -194,10 +188,6 @@ h1 {
 }
 
 /* virtual sessions */
-.virtual-sessions {
-  padding: 2% 22%;
-}
-
 .virtual-sessions .flex-container > div {
   width: 50%;
   margin-left: 0;
@@ -229,7 +219,7 @@ h1 {
 
 .get-support-hero .hero-content {
   padding-top: 4vh;
-  width: 37vw;
+  width: 100vw;
   padding-left: 9vw;
 }
 
@@ -297,4 +287,54 @@ h1 {
 .footer a {
   text-align: center;
   font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+
+  .nav-menu .flex-container {
+    padding: 0.25% 13%;
+  }
+
+  .nav-menu .flex-container > div {
+    width: 10%;
+  }
+
+  .products {
+    padding: 5% 15%;
+  }
+
+  .products .flex-container > div {
+    width: 14.29%;
+    margin: 2%;
+  }
+
+  .quick-links {
+    padding: 2% 16%;
+  }
+
+  .quick-links .flex-container > div {
+    width: 33.33%;
+    border-right: 1px solid #dedede;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .quick-links .flex-container > div:last-child {
+    border-right: none;
+  }
+
+  .family-promos .flex-container > div {
+    width: 50%;
+  }
+
+  .virtual-sessions {
+    padding: 2% 22%;
+  }
+
+  .get-support-hero .hero-content {
+    width: 37vw;
+  }
 }
